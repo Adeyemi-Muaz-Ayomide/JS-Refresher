@@ -151,13 +151,27 @@ function getBook(id) {
 // author;
 
 //With destructuring, it's easier
-//Object destructuring
-const books = getBooks()
-const { title, author, publicationDate, genres, pages } = books[1]
-console.log(title, author, publicationDate, pages, genres)
 
+//Object destructuring
+const books = getBooks();
+const { title, author, publicationDate, genres, pages } = books[1];
+console.log(title, author, publicationDate, pages, genres);
 
 //Array destructuring
 
-const [firstGenres, secondGenres] = genres;
-console.log(firstGenres, secondGenres)
+// const [firstGenres, secondGenres] = genres;
+// console.log(firstGenres, secondGenres);
+
+//Rest Operator
+
+const [firstGenres, secondGenres, ...otherGenres] = genres;
+genres;
+
+//Spread Operator
+//Array
+const newGenres = [...genres, "hey"];
+newGenres;
+
+//Objects
+const updatedGenres = { ...data[0], isWorking: true, pages: 2000 };
+updatedGenres;
