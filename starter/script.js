@@ -184,3 +184,6 @@ summary;
 //Ternary Operator
 const pagesAmount = pages > 1000 ? 'over a thousand' : 'less than a thousand'
 console.log(`The book has ${pagesAmount} pages`);
+
+//Arrow functions
+const getBooks = () => { return data }
