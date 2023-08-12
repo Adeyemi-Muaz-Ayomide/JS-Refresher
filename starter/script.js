@@ -154,7 +154,7 @@ function getBook(id) {
 
 //Object destructuring
 const books = getBooks();
-const { title, author, publicationDate, genres, pages } = books[1];
+const { title, author, publicationDate, genres, pages } = books[0];
 console.log(title, author, publicationDate, pages, genres);
 
 //Array destructuring
@@ -180,3 +180,7 @@ updatedGenres;
 //Template Literals
 const summary = `${title} is a very nice book written by ${author} which was published in ${publicationDate.split('-')[0]}`;
 summary;
+
+//Ternary Operator
+const pagesAmount = pages > 1000 ? 'over a thousand' : 'less than a thousand'
+console.log(`The book has ${pagesAmount} pages`);
