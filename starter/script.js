@@ -175,3 +175,8 @@ newGenres;
 //Objects
 const updatedGenres = { ...data[0], isWorking: true, pages: 2000 };
 updatedGenres;
+
+
+//Template Literals
+const summary = `${title} is a very nice book written by ${author} which was published in ${publicationDate.split('-')[0]}`;
+summary;
