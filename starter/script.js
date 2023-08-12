@@ -142,3 +142,22 @@ function getBooks() {
 function getBook(id) {
   return data.find((d) => d.id === id);
 }
+
+//Destructuring
+// const title = data[0].title;
+// title;
+
+// const author = data[0].author;
+// author;
+
+//With destructuring, it's easier
+//Object destructuring
+const books = getBooks()
+const { title, author, publicationDate, genres, pages } = books[1]
+console.log(title, author, publicationDate, pages, genres)
+
+
+//Array destructuring
+
+const [firstGenres, secondGenres] = genres;
+console.log(firstGenres, secondGenres)
