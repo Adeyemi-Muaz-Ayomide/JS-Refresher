@@ -219,3 +219,12 @@ const desArray = arr.slice().sort((a, b) => b - a); //descending order
 arr;
 ascArray
 desArray
+
+//Promises
+const todos = async () => {
+  const res = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+  const data = await res.json()
+
+  console.log(data)
+}
+
