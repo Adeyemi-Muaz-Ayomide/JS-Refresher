@@ -151,7 +151,7 @@ function getBook(id) {
 // author;
 
 //With destructuring, it's easier
-
+/*
 //Object destructuring
 const books = getBooks();
 const { title, author, publicationDate, genres, pages } = books[0];
@@ -203,3 +203,12 @@ console.log(null ?? 'some string')
 console.log(undefined ?? 'some string')
 console.log(0 ?? 'some string')
 console.log('' ?? 'some string')
+*/
+//Map array method
+const multiplyBy2 = [1, 2, 3, 4, 5]
+console.log(multiplyBy2.map(num => num * 2))
+
+//Filter array method
+const filteredArray = [1, 2, 3, 4, 5]
+console.log(filteredArray.filter(fil => fil > 2))
+
