@@ -205,10 +205,17 @@ console.log(0 ?? 'some string')
 console.log('' ?? 'some string')
 */
 //Map array method
-const multiplyBy2 = [1, 2, 3, 4, 5]
-console.log(multiplyBy2.map(num => num * 2))
+const multiplyBy2 = [1, 2, 3, 4, 5];
+console.log(multiplyBy2.map((num) => num * 2));
 
 //Filter array method
-const filteredArray = [1, 2, 3, 4, 5]
-console.log(filteredArray.filter(fil => fil > 2))
+const filteredArray = [1, 2, 3, 4, 5];
+console.log(filteredArray.filter((fil) => fil > 2));
 
+//sort method
+const arr = [8, 5, 3, 0, 2, 6];
+const ascArray = arr.slice().sort((a, b) => a - b); //ascending order
+const desArray = arr.slice().sort((a, b) => b - a); //descending order
+arr;
+ascArray
+desArray
