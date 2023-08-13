@@ -186,4 +186,20 @@ const pagesAmount = pages > 1000 ? 'over a thousand' : 'less than a thousand'
 console.log(`The book has ${pagesAmount} pages`);
 
 //Arrow functions
-const getBooks = () => { return data }
+// const getBooks = () => { return data }
+
+
+//Short-Circuiting && Logical Operator
+console.log(true && 'Some string')
+console.log(false && 'Some string')
+
+
+console.log(true || 'Some string')
+console.log(false || 'Some string')
+
+//Nullish coalescing operator ??
+//Falsy Values 0, '' , null , undefined
+console.log(null ?? 'some string')
+console.log(undefined ?? 'some string')
+console.log(0 ?? 'some string')
+console.log('' ?? 'some string')
